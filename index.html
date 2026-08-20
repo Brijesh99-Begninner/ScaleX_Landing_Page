@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScaleX — India's Business Expansion Ecosystem</title>
+<meta name="description" content="ScaleX is India's business growth marketplace for franchising, distribution, events, brand growth, investment opportunities and expansion partnerships.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="ScaleX logo" class="brand-mark">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#what-is" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Growth Services</a>
+      <a href="#process" class="nav-link">Marketplace</a>
+      <a href="#investor-event" class="nav-link">Events</a>
+      <a href="#competitors" class="nav-link">Competitors</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="#call-form" class="btn btn-primary btn-sm open-call-form">Grow with ScaleX</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-watermark" aria-hidden="true">X</div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">India's Business Growth Marketplace</p>
+      <h1 class="hero-title">
+        <span class="reveal" style="--d:0">Every route to</span>
+        <span class="reveal accent-italic" style="--d:1">business growth.</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:2">One platform. Limitless ways to scale.</p>
+      <p class="hero-desc reveal" style="--d:3">
+        ScaleX helps businesses move from local to state, national and global markets
+        through franchising, distribution, strategic partnerships, brand growth,
+        investment opportunities, curated events and market expansion.
+      </p>
+
+      <div class="hero-ctas reveal" style="--d:4">
+        <a href="#call-form" class="btn btn-primary open-call-form">Start Your Growth Journey</a>
+        <a href="#investor-event" class="btn btn-outline">Explore Upcoming Events</a>
+        <a href="#services" class="btn btn-text">Explore the ecosystem <span class="arrow-glyph">&#8594;</span></a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" style="--d:2">
+      <div class="ascent-card">
+        <div class="ascent-head">
+          <span class="mono-tag">GROWTH TRAJECTORY</span>
+          <span class="mono-tag mono-tag--muted">SCALEX ECOSYSTEM</span>
+        </div>
+        <svg viewBox="0 0 480 300" class="ascent-svg" id="ascentSvg" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#6F7B4F" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#6F7B4F" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- grid -->
+          <g class="grid-lines">
+            <line x1="0" y1="230" x2="480" y2="230"/>
+            <line x1="0" y1="160" x2="480" y2="160"/>
+            <line x1="0" y1="90" x2="480" y2="90"/>
+          </g>
+          <path id="areaPath" class="area-path" d="M10,240 L90,205 L170,190 L250,140 L330,95 L410,55 L460,30 L460,280 L10,280 Z" fill="url(#fillGrad)" />
+          <path id="linePath" class="line-path" d="M10,240 L90,205 L170,190 L250,140 L330,95 L410,55 L460,30" />
+          <g class="node-group">
+            <circle cx="10" cy="240" r="4" class="node-dot"/>
+            <circle cx="90" cy="205" r="4" class="node-dot"/>
+            <circle cx="170" cy="190" r="4" class="node-dot"/>
+            <circle cx="250" cy="140" r="4" class="node-dot"/>
+            <circle cx="330" cy="95" r="4" class="node-dot"/>
+            <circle cx="410" cy="55" r="4" class="node-dot"/>
+            <circle cx="460" cy="30" r="5" class="node-dot node-dot--end"/>
+          </g>
+          <text x="10" y="258" class="node-label">Nagpur</text>
+          <text x="90" y="223" class="node-label">Pune</text>
+          <text x="170" y="208" class="node-label">Indore</text>
+          <text x="238" y="158" class="node-label">Ahmedabad</text>
+          <text x="318" y="113" class="node-label">Hyderabad</text>
+          <text x="378" y="52" class="node-label">Delhi NCR</text>
+        </svg>
+        <div class="ascent-foot">
+          <div class="ascent-stat">
+            <span class="ascent-num">12</span>
+            <span class="ascent-lbl">Growth Verticals</span>
+          </div>
+          <div class="ascent-stat">
+            <span class="ascent-num">08</span>
+            <span class="ascent-lbl">Business Expos</span>
+          </div>
+          <div class="ascent-stat">
+            <span class="ascent-num">01</span>
+            <span class="ascent-lbl">Growth Marketplace</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-marquee" aria-hidden="true">
+    <div class="hero-marquee-track">
+      <span>FRANCHISE DEVELOPMENT</span><span>&#9670;</span>
+      <span>DISTRIBUTION EXPANSION</span><span>&#9670;</span>
+      <span>INVESTOR CONNECT</span><span>&#9670;</span>
+      <span>NATIONAL &amp; INTERNATIONAL EXPANSION</span><span>&#9670;</span>
+      <span>FRANCHISE DEVELOPMENT</span><span>&#9670;</span>
+      <span>DISTRIBUTION EXPANSION</span><span>&#9670;</span>
+      <span>INVESTOR CONNECT</span><span>&#9670;</span>
+      <span>NATIONAL &amp; INTERNATIONAL EXPANSION</span><span>&#9670;</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT IS SCALEX ============ -->
+<section class="section what-is" id="what-is">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">About ScaleX</p>
+      <h2 class="reveal">What is <span class="accent-italic">ScaleX</span>?</h2>
+    </div>
+    <div class="what-is-grid">
+      <p class="lead-statement reveal">
+        ScaleX is India's Business Expansion Ecosystem: one connected platform for
+        businesses ready to grow from local to state, national and global markets.
+      </p>
+      <div class="what-is-side reveal">
+        <p>We bring together curated events, strategic partnerships, franchising, distribution, branding, investment opportunities and market expansion &mdash; so the next stage of growth is always within reach.</p>
+        <a href="#process" class="text-link">Discover the marketplace <span class="arrow-glyph">&#8594;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT WE DO ============ -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Our Services</p>
+      <h2 class="reveal">Built around every path to growth.</h2>
+      <p class="section-sub reveal">Twelve connected verticals. One expansion ecosystem.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card reveal">
+        <span class="service-idx">01</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M8 18L20 8l12 10M11 17v14h18V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 31v-8h6v8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Franchise Growth</h3>
+        <p>Franchise development, sales, master franchise, area development and franchise events.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">02</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="9" cy="10" r="3.5" stroke="currentColor" stroke-width="2"/><circle cx="31" cy="10" r="3.5" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="30" r="3.5" stroke="currentColor" stroke-width="2"/><path d="M12 12l6 15M28 12l-6 15M12.5 10h15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Business Events</h3>
+        <p>Franchise, distributor, retail, startup, manufacturing, healthcare, real estate and education expos.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">03</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="13" stroke="currentColor" stroke-width="2"/><path d="M20 20l6-9-9 3 3 6z" fill="currentColor"/></svg>
+        </div>
+        <h3>Brand Growth</h3>
+        <p>Brand strategy, business positioning, personal branding, digital branding, PR and business content.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">04</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 6v6M20 28v6M6 20h6M28 20h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="20" r="7" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Content Creation</h3>
+        <p>Podcasts, founder interviews, business documentaries, case studies, social content and event coverage.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">05</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="13" cy="14" r="4" stroke="currentColor" stroke-width="2"/><circle cx="27" cy="14" r="4" stroke="currentColor" stroke-width="2"/><path d="M6 32c0-5 3-9 7-9s7 4 7 9M20 32c0-5 3-9 7-9s7 4 7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Franchise Staffing</h3>
+        <p>Staff-hiring support to help franchise networks build capable teams as they expand.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">06</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><rect x="7" y="7" width="26" height="26" rx="1" stroke="currentColor" stroke-width="2"/><path d="M7 15h26M15 33V15" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Business AI Automations</h3>
+        <p>Smart operational systems that help growing businesses work faster and more consistently.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">07</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><rect x="9" y="6" width="22" height="28" rx="1.5" stroke="currentColor" stroke-width="2"/><path d="M14 14h12M14 20h12M14 26h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Distribution Expansion</h3>
+        <p>Distributor recruitment, dealer network development, channel partner meets and retail expansion.</p>
+      </article>
+
+      <article class="service-card reveal">
+        <span class="service-idx">08</span>
+        <div class="service-icon">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><path d="M6 20h28M20 6c4 4 6 9 6 14s-2 10-6 14c-4-4-6-9-6-14s2-10 6-14z" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Business Networking</h3>
+        <p>CEO meets, founder networking, investor connect, business matchmaking and industry roundtables.</p>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-idx">09</span>
+        <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M8 31h24M11 31V18h18v13M8 18l4-8h16l4 8M16 31v-7h8v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Business Expansion</h3>
+        <p>National and international expansion, market-entry strategy, expansion consulting and growth planning.</p>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-idx">10</span>
+        <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M10 29l7-8 5 4 8-11M27 14h3v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 33h24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Business Investments</h3>
+        <p>Franchise and business investment opportunities, acquisitions, joint ventures and strategic partnerships.</p>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-idx">11</span>
+        <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M8 14h18l6 6-6 6H8zM15 14V9h10v5M14 20h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Business Buying &amp; Selling</h3>
+        <p>Opportunities to buy, sell and acquire businesses with the right strategic fit.</p>
+      </article>
+      <article class="service-card reveal">
+        <span class="service-idx">12</span>
+        <div class="service-icon"><svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 16h24M16 8v24" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Equipment Partners</h3>
+        <p>Equipment and infrastructure connections for new outlets and growing business operations.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="expansion-process" id="process" aria-labelledby="process-title">
+  <div class="wrap">
+    <header class="process-header">
+      <p class="process-eyebrow">The master move</p>
+      <h2 id="process-title">ScaleX Growth <em>Marketplace</em></h2>
+      <p>Everything a business owner needs to grow, gathered in one connected place.</p>
+    </header>
+    <ol class="process-list">
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">01</span><h3>Find growth opportunities</h3><p>Discover franchise, distributor and dealer opportunities built for expansion.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></svg></span>
+      </li>
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">02</span><h3>Meet capital &amp; partners</h3><p>Connect with investors, joint-venture opportunities, manufacturing and export partners.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17 10 11l4 3 6-8"/><path d="M16 6h4v4"/></svg></span>
+      </li>
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">03</span><h3>Buy, sell or acquire</h3><p>Explore businesses for sale and acquisition opportunities with strategic potential.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 10h16M10 4v16"/></svg></span>
+      </li>
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">04</span><h3>Build your presence</h3><p>Find retail-space opportunities, verified service providers and growth consultants.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 13 11-5v8L4 11zM15 10l3-2v8l-3-2M6 15l1 4h3l-1-3"/></svg></span>
+      </li>
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">05</span><h3>Join the right room</h3><p>Register for purpose-built events, meetings and business matchmaking.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h5l2 2 2-2h7M5 12l3-4 3 2M19 12l-3 4-3-2"/></svg></span>
+      </li>
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">06</span><h3>Make informed moves</h3><p>Use the right people, partners and opportunities to turn plans into momentum.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l3 3v15H7zM15 3v4h4M10 12h5M10 16h4"/></svg></span>
+      </li>
+      <li class="process-row">
+        <article class="process-card"><span class="process-number">07</span><h3>Grow without silos</h3><p>One marketplace for opportunities, relationships, services and the next stage of business.</p></article>
+        <span class="process-node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9h12v11M4 9l2-5h12l2 5M9 20v-5h6v5"/></svg></span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ INVESTOR EVENT ============ -->
+<section class="section investor" id="investor-event">
+  <div class="wrap">
+    <div class="investor-panel reveal">
+      <div class="investor-copy">
+        <p class="eyebrow eyebrow--light">ScaleX Business Events</p>
+        <h2 class="light-h2">Where the next growth conversation begins.</h2>
+        <p class="investor-desc">Our expos and curated meets put founders, distributors,
+          investors, operators and partners in the same room &mdash; with expansion as the
+          shared agenda.</p>
+
+        <div class="chip-row">
+          <span class="chip">Franchise Expo</span>
+          <span class="chip">Distributor Expo</span>
+          <span class="chip">CEO Meets</span>
+          <span class="chip">Investor Connect</span>
+          <span class="chip">Business Matchmaking</span>
+        </div>
+
+        <a href="#call-form" class="btn btn-light open-call-form">Join the ScaleX Network</a>
+      </div>
+
+      <div class="investor-price">
+        <span class="mono-tag mono-tag--light">EVENT ECOSYSTEM</span>
+        <div class="price-figure">08</div>
+        <span class="price-sub">business expo formats</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING / COMMERCIALS ============ -->
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">One shop stop</p>
+      <h2 class="reveal">A new kind of growth platform.</h2>
+      <p class="section-sub reveal">Think LinkedIn + IndiaMART + BookMyShow + Franchise India + business networking, focused entirely on expansion.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Opportunities</h3>
+        <p class="price-tagline">Find the next move</p>
+        <div class="price-amount">01</div>
+        <ul class="price-list">
+          <li>Franchise &amp; distribution routes</li>
+          <li>Investment &amp; acquisition leads</li>
+          <li>Joint ventures &amp; partnerships</li>
+          <li>Retail, export &amp; manufacturing connects</li>
+        </ul>
+        <a href="#process" class="btn btn-outline btn-block">Explore opportunities</a>
+      </div>
+
+      <div class="price-card price-card--featured reveal">
+        <span class="price-badge">The ScaleX Difference</span>
+        <h3>Connections</h3>
+        <p class="price-tagline">Meet the right people</p>
+        <div class="price-amount">02</div>
+        <p class="price-alt">in the right rooms</p>
+        <ul class="price-list">
+          <li>Curated business events</li>
+          <li>Founder and CEO networking</li>
+          <li>Investor access &amp; matchmaking</li>
+          <li>Verified growth partners</li>
+        </ul>
+        <a href="#investor-event" class="btn btn-primary btn-block">See our event ecosystem</a>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Execution</h3>
+        <p class="price-tagline">Turn opportunity into action</p>
+        <div class="price-amount">03</div>
+        <p class="price-alt">with support that moves</p>
+        <ul class="price-list">
+          <li>Brand, content and growth strategy</li>
+          <li>Franchise and distribution development</li>
+          <li>National and international expansion</li>
+        </ul>
+        <a href="#call-form" class="btn btn-outline btn-block open-call-form">Plan your next move</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section class="section industries">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Business Expos</p>
+      <h2 class="reveal">A room for every growing sector.</h2>
+    </div>
+
+    <div class="industry-grid">
+      <div class="industry-card reveal" style="--d:0">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 2v8a2 2 0 0 0 2 2v10M6 2v6M9 2v6M12 2v20M18 2c-2 2-2 5-2 7 0 2 1 3 2 3s2-1 2-3c0-2 0-5-2-7z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="industry-name">Franchise Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:1">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 8h12l1 13H5L6 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <span class="industry-name">Distributor Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:2">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span class="industry-name">Retail Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:3">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l9-5 9 5-9 5-9-5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 8v8l9 5 9-5V8M12 13v8" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="industry-name">Startup Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:4">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.7-10-9.3C.5 8.2 2.6 5 6 5c2 0 3.5 1.1 6 3.8C14.5 6.1 16 5 18 5c3.4 0 5.5 3.2 4 6.7C19.5 16.3 12 21 12 21z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="industry-name">Manufacturing Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:0">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 9l10-5 10 5-10 5-10-5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 11.5V17c0 1.4 3 3 6 3s6-1.6 6-3v-5.5M22 9v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="industry-name">Healthcare Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:1">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 19v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M3 19h18M5 11V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4M13 11V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="industry-name">Real Estate Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:2">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M8 12h1.5a2 2 0 0 1 0 4H6M14 12l4.5-3a2 2 0 0 1 2.7 2.9L15 18l-6-1-3.5 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 11.5l3-1 3.5 6-3 1.5-3.5-6.5z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="industry-name">Education Expo</span>
+      </div>
+      <div class="industry-card reveal" style="--d:3">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M2 17V7a1 1 0 0 1 1-1h10v11H2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M13 10h4l4 4v3h-8v-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6" cy="18" r="1.8" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <span class="industry-name">Business Networking</span>
+      </div>
+      <div class="industry-card reveal" style="--d:4">
+        <span class="industry-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2c3 2 5 6 5 10 0 2-1 4-2 5l-1 3h-4l-1-3c-1-1-2-3-2-5 0-4 2-8 5-10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="1.8" stroke="currentColor" stroke-width="1.6"/><path d="M8 17c-2 1-3 2-3 4M16 17c2 1 3 2 3 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span class="industry-name">Investor Connect</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS & PARTNERS ============ -->
+<section class="section client-partners" id="clients" aria-labelledby="clients-title">
+  <div class="wrap client-partners-wrap">
+    
+    <!-- Left Column: Editorial Head & Detail Box -->
+    <div class="relationship-details-col">
+      <div class="section-head client-partners-head">
+        <p class="eyebrow reveal">Trusted relationships</p>
+        <h2 class="reveal" id="clients-title">Built alongside businesses<br>ready to <span class="accent-italic">move forward.</span></h2>
+      </div>
+      
+      <!-- Interactive Detail Box -->
+      <div class="relationship-info-box reveal">
+        <div class="info-box-default" id="relationshipDefaultInfo">
+          <p>From hospitality and intelligent hardware to cinema and lifestyle, these are a few of the businesses growing with ScaleX.</p>
+          <span class="info-box-hint">Hover over any logo node to see their expansion profile.</span>
+        </div>
+        <div class="info-box-active" id="relationshipActiveInfo" hidden>
+          <span class="info-box-category" id="relationshipCategory">Portfolio Partner</span>
+          <h4 class="info-box-title" id="relationshipTitle">Mahachai</h4>
+          <p class="info-box-desc" id="relationshipDesc">Leading food and beverage brand expanding its franchise footprint across Central India with standardized operational systems.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Column: Staggered Floating Logo Canvas -->
+    <div class="relationship-canvas-col reveal">
+      <div class="logo-canvas">
+        
+        <!-- Logo 1: Mahachai -->
+        <div class="canvas-logo-wrapper float-delay-1">
+          <div class="canvas-logo-node" 
+               data-category="Portfolio Partner" 
+               data-title="Mahachai" 
+               data-desc="A highly popular standardized F&amp;B franchise system expanding retail outlets across Maharashtra and Central India.">
+            <img src="Cinema100.png" alt="Mahachai logo" class="relationship-logo" style="display:none;"> <!-- preload or hidden dummy for safety, wait, let's keep the real one inside -->
+            <img src="Mahachai.png" alt="Mahachai logo" class="relationship-logo">
+          </div>
+        </div>
+
+        <!-- Logo 2: Amani Hotels -->
+        <div class="canvas-logo-wrapper float-delay-2">
+          <div class="canvas-logo-node" 
+               data-category="Portfolio Partner" 
+               data-title="Amani Group of Hotels" 
+               data-desc="A premium boutique hospitality collection scaling luxury stays, resorts, and experiential hotels in key tourist destinations.">
+            <img src="Amani_Hotels.png" alt="Amani Group of Hotels logo" class="relationship-logo">
+          </div>
+        </div>
+
+        <!-- Logo 3: Jefnets -->
+        <div class="canvas-logo-wrapper float-delay-3">
+          <div class="canvas-logo-node" 
+               data-category="Portfolio Partner" 
+               data-title="Jefnets" 
+               data-desc="An innovative technology and network services provider building scalable retail IT infrastructure and cloud systems.">
+            <img src="assets/jefnets.png" alt="Jefnets logo" class="relationship-logo">
+          </div>
+        </div>
+
+        <!-- Logo 4: Cinema 100 -->
+        <div class="canvas-logo-wrapper float-delay-4">
+          <div class="canvas-logo-node" 
+               data-category="Portfolio Partner" 
+               data-title="Cinema 100" 
+               data-desc="A regional cinema and entertainment chain scaling multi-screen theaters and modern cinematic experiences.">
+            <img src="Cinema100.png" alt="Cinema 100 logo" class="relationship-logo">
+          </div>
+        </div>
+
+        <!-- Logo 5: Loft -->
+        <div class="canvas-logo-wrapper float-delay-5">
+          <div class="canvas-logo-node" 
+               data-category="Portfolio Partner" 
+               data-title="Loft" 
+               data-desc="A high-end co-working space provider offering flexible, design-led business infrastructure and premium environments.">
+            <img src="Loft.png" alt="Loft logo" class="relationship-logo">
+          </div>
+        </div>
+
+        <!-- Logo 6: ReachX -->
+        <div class="canvas-logo-wrapper float-delay-6">
+          <div class="canvas-logo-node" 
+               data-category="Marketing &amp; Operational Partner" 
+               data-title="ReachX" 
+               data-desc="Our marketing execution partner developing digital platforms and growth automations for franchise networks.">
+            <img src="ReachX.svg" alt="ReachX logo" class="relationship-logo">
+          </div>
+        </div>
+
+        <!-- Logo 7: MARCS BizAdvisors -->
+        <div class="canvas-logo-wrapper float-delay-7">
+          <div class="canvas-logo-node" 
+               data-category="Legal Advisory Partner" 
+               data-title="MARCS BizAdvisors" 
+               data-desc="Our legal advisory partner facilitating franchise agreements, corporate compliance, and expansion structures.">
+            <img src="assets/marcs-bizadvisors.png" alt="MARCS BizAdvisors Private Limited logo" class="relationship-logo">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ============ OUR COMPETITORS ============ -->
+<section class="section competitors" id="competitors" aria-labelledby="competitors-title">
+  <div class="wrap">
+    <div class="competitors-intro">
+      <div class="section-head">
+        <p class="eyebrow reveal">Our Competitors</p>
+        <h2 class="reveal" id="competitors-title">A familiar market, seen from a wider <span class="accent-italic">perspective.</span></h2>
+      </div>
+      <p class="competitors-lead reveal">ScaleX sits at the intersection of franchising, events, networking, investment and hands-on expansion. These established organisations are strong in their spaces; our role is to connect the spaces.</p>
+    </div>
+
+    <div class="competitor-comparison reveal" role="region" aria-label="Competitor comparison">
+      <div class="competitor-labels" aria-hidden="true">
+        <span>Organisation</span><span>Origin</span><span>Core focus</span><span>The ScaleX difference</span>
+      </div>
+
+      <article class="competitor-row">
+        <div class="competitor-company"><span class="competitor-index">01</span><h3>Franchise India</h3><p>India</p></div>
+        <div class="competitor-origin"><span class="mobile-field">Origin</span><strong>1999</strong><p>Founded by Gaurav Marya</p></div>
+        <div class="competitor-focus"><span class="mobile-field">Core focus</span><p>Franchise consulting, franchise sales and expos.</p></div>
+        <div class="competitor-difference"><span class="mobile-field">The ScaleX difference</span><p>Beyond franchising into distribution, investments, networking and business expansion.</p></div>
+      </article>
+
+      <article class="competitor-row">
+        <div class="competitor-company"><span class="competitor-index">02</span><h3>Entrepreneurs&rsquo; Organization</h3><p>Global</p></div>
+        <div class="competitor-origin"><span class="mobile-field">Origin</span><strong>1987</strong><p>Founded by a group of entrepreneurs</p></div>
+        <div class="competitor-focus"><span class="mobile-field">Core focus</span><p>Global entrepreneur networking.</p></div>
+        <div class="competitor-difference"><span class="mobile-field">The ScaleX difference</span><p>Execution-led connections, paired with opportunities, services and a route to expansion.</p></div>
+      </article>
+
+      <article class="competitor-row">
+        <div class="competitor-company"><span class="competitor-index">03</span><h3>BNI</h3><p>Global</p></div>
+        <div class="competitor-origin"><span class="mobile-field">Origin</span><strong>1985</strong><p>Founded by Ivan Misner</p></div>
+        <div class="competitor-focus"><span class="mobile-field">Core focus</span><p>Referral-led business networking.</p></div>
+        <div class="competitor-difference"><span class="mobile-field">The ScaleX difference</span><p>Business matchmaking focused on expansion opportunities, not referrals alone.</p></div>
+      </article>
+
+      <article class="competitor-row">
+        <div class="competitor-company"><span class="competitor-index">04</span><h3>TiE</h3><p>Global</p></div>
+        <div class="competitor-origin"><span class="mobile-field">Origin</span><strong>1992</strong><p>Founded by Silicon Valley entrepreneurs</p></div>
+        <div class="competitor-focus"><span class="mobile-field">Core focus</span><p>Startup ecosystem and mentoring.</p></div>
+        <div class="competitor-difference"><span class="mobile-field">The ScaleX difference</span><p>Growth support for businesses at every stage, not only startups.</p></div>
+      </article>
+
+      <article class="competitor-row competitor-row--featured">
+        <div class="competitor-company"><span class="competitor-index">05</span><h3>Informa Markets</h3><p>Global</p></div>
+        <div class="competitor-origin"><span class="mobile-field">Origin</span><strong>Global leader</strong><p>Large-scale B2B exhibitions</p></div>
+        <div class="competitor-focus"><span class="mobile-field">Core focus</span><p>Trade shows and B2B exhibitions across industries.</p></div>
+        <div class="competitor-difference"><span class="mobile-field">The ScaleX difference</span><p>Expos connected to business matchmaking and growth services that continue beyond the event.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY SCALEX ============ -->
+<section class="section why">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Why ScaleX</p>
+      <h2 class="reveal">More than a service. A growth system.</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-num">01</span>
+        <h4>Beyond Franchising</h4>
+        <p>Franchise growth is one route. We also bring distribution, investment, events and expansion together.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-num">02</span>
+        <h4>Execution-Focused</h4>
+        <p>We connect people to real opportunities and the services that make growth happen.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-num">03</span>
+        <h4>Opportunity-Led Networking</h4>
+        <p>Networking designed around expansion opportunities, not simply referrals or introductions.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-num">04</span>
+        <h4>For Every Growth Stage</h4>
+        <p>From an emerging founder to an established enterprise, ScaleX supports the next move.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-num">05</span>
+        <h4>Matchmaking Meets Services</h4>
+        <p>Our events connect people, while our growth verticals give them the means to act.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-num">06</span>
+        <h4>One Connected Platform</h4>
+        <p>Expos, partners, consulting and opportunities no longer need to live in separate silos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER / CONTACT ============ -->
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-top">
+    <div class="footer-col footer-brand">
+      <span class="footer-logo-chip"><img src="assets/logo.png" alt="ScaleX logo" class="footer-logo"></span>
+      <p>India's business expansion ecosystem &mdash; franchise development, distribution, investor connect and execution support, in one place.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <a href="index.html#what-is">About ScaleX</a>
+      <a href="index.html#services">What We Do</a>
+      <a href="index.html#process">Our Process</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Programs</h5>
+      <a href="index.html#investor-event">Investor Event</a>
+      <a href="index.html#pricing">Franchise Blueprint</a>
+      <a href="index.html#pricing">Expansion Management</a>
+      <a href="contact.html#form-title">Book a Strategic Call</a>
+    </div>
+
+    <div class="footer-col footer-contact">
+      <h5>Visit / Contact</h5>
+      <p class="footer-address">ScaleX Office<br>Loft Coworking, IT Park Trimurti Nagar, Nagpur<br>Maharashtra 440022, India</p>
+      <a href="mailto:hello@scalex.co.in" class="footer-link-line">hello@scalex.co.in</a>
+      <a href="tel:+911234567890" class="footer-link-line">+91 12345 67890</a>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <span>&copy; <span id="year"></span> ScaleX. All rights reserved.</span>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<div class="call-form-modal" id="callFormModal" hidden>
+  <div class="call-form-card" role="dialog" aria-modal="true" aria-labelledby="call-form-title">
+    <button class="call-modal-close" id="callFormClose" type="button" aria-label="Close form">&times;</button>
+    <p class="eyebrow">Start a conversation</p>
+    <h2 id="call-form-title">Book a strategic call</h2>
+    <p>Tell us a little about your business and our team will be in touch.</p>
+    <form class="strategic-call-form" id="strategicCallForm" novalidate>
+      <label>Full name<span class="form-control"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c.8-3.5 3.5-5.5 7.5-5.5s6.7 2 7.5 5.5"/></svg><input type="text" name="name" autocomplete="name" aria-describedby="name-error"></span><span class="form-error" id="name-error"></span></label>
+      <label>Work email<span class="form-control"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7 7.5 5.5L19.5 7"/></svg><input type="email" name="email" autocomplete="email" aria-describedby="email-error"></span><span class="form-error" id="email-error"></span></label>
+      <label>Phone number<span class="form-control"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M7 3.8h2.2l1.2 4-1.7 1.6a14.4 14.4 0 0 0 5.9 5.9l1.6-1.7 4 1.2V17c0 1.2-1 2.2-2.2 2.2C10.2 19.2 4.8 13.8 4.8 7 4.8 5.8 5.8 4 7 3.8Z"/></svg><input type="tel" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="phone-error"></span><span class="form-error" id="phone-error"></span></label>
+      <label>Business name<span class="form-control"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4.5 20V7.5h15V20M8 7.5V4h8v3.5M8.5 11h1M14.5 11h1M8.5 14.5h1M14.5 14.5h1M11 20v-3.5h2V20"/></svg><input type="text" name="business" autocomplete="organization" aria-describedby="business-error"></span><span class="form-error" id="business-error"></span></label>
+      <label>About your expansion<span class="form-control form-control--message"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" focusable="false"><path d="M5 5.5h14v10H9l-4 3v-13Z"/><path d="M8.5 9h7M8.5 12h4.5"/></svg><textarea name="message" rows="3" aria-describedby="message-error"></textarea></span><span class="form-error" id="message-error"></span></label>
+      <button class="btn btn-primary" type="submit">Send message <span class="arrow-glyph">&#8594;</span></button>
+    </form>
+  </div>
+</div>
+
+<div class="call-confirmation" id="callConfirmation" hidden>
+  <div class="call-confirmation-card" role="dialog" aria-modal="true" aria-labelledby="confirmation-title">
+    <p class="eyebrow">Thank you</p>
+    <h2 id="confirmation-title">Your message is sent.</h2>
+    <p>We will get back to you shortly.</p>
+    <button class="btn btn-primary" id="confirmationBack" type="button">Back</button>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
