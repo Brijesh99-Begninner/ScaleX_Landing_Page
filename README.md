@@ -16,8 +16,8 @@ A single-page marketing website for **ScaleX**, built to communicate its mission
 
 | Technology | Purpose |
 |------------|---------|
-| HTML5      | Page structure and semantic markup |
-| CSS3       | Styling, layout, and responsive design |
+| HTML      | Page structure and semantic markup |
+| CSS    | Styling, layout, and responsive design |
 | JavaScript | Interactivity and dynamic behavior |
 
 ## 📁 Project Structure
