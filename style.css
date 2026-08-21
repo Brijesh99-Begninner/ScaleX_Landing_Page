@@ -558,27 +558,159 @@ button{ font-family: inherit; cursor:pointer; }
 }
 
 /* ===================================================================
-   Expansion process
+   ScaleX Growth Marketplace (4x3 Grid)
 =================================================================== */
 .expansion-process,.cta-band{ border-top:1px solid var(--line-soft); }
 .expansion-process{ background:var(--paper); padding:110px 0; font-family:var(--font-body); }
-.process-header{ max-width:670px; margin:0 0 56px; text-align:left; }
+.process-header{ max-width:670px; margin:0 0 48px; text-align:left; }
 .process-eyebrow{ display:flex; align-items:center; gap:10px; color:var(--olive-dark); font-family:var(--font-mono); font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; }
 .process-eyebrow::before{ content:''; width:22px; height:1px; background:var(--olive-dark); }
 .process-eyebrow::after{ display:none; }
 .process-header h2{ margin:8px 0; color:var(--navy); font-family:var(--font-display); font-size:clamp(2.7rem,4.8vw,3.75rem); font-weight:600; letter-spacing:-.018em; line-height:.96; }
 .process-header h2 em{ color:var(--olive); }
 .process-header > p:last-child{ max-width:620px; margin:0; color:var(--ink-soft); font-size:1.15rem; line-height:1.6; }
-.process-list{ margin:0; padding:0; list-style:none; border-top:1px solid var(--navy); }
-.process-row{ display:grid; grid-template-columns:80px 78px minmax(210px,1fr) minmax(280px,1.45fr); gap:20px; align-items:center; min-height:124px; padding:20px 20px 20px 28px; border-bottom:1px solid #d8d7d2; transition:background .35s ease,transform .35s ease,box-shadow .35s ease,border-radius .35s ease; }
-.process-card{ display:contents; }
-.process-number{ grid-column:1; grid-row:1; color:#b8b8b4; font-family:var(--font-display); font-size:1.65rem; font-style:italic; transition:color .35s ease; }
-.process-node{ grid-column:2; grid-row:1; justify-self:center; display:grid; place-items:center; width:52px; height:52px; border-radius:50%; background:var(--navy); box-shadow:0 5px 10px rgba(12,27,49,.18); color:var(--paper); transition:background .35s ease,color .35s ease,transform .35s ease; }
-.process-node svg{ width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
-.process-card h3{ grid-column:3; grid-row:1; margin:0; color:var(--navy); font-family:var(--font-body); font-size:1.3rem; font-weight:600; }
-.process-card p{ grid-column:4; grid-row:1; margin:0; max-width:520px; color:var(--ink-soft); font-size:1rem; line-height:1.65; }
-@media (hover:hover) and (min-width:761px){ .process-row:hover{ position:relative; z-index:1; background:#fff; border-radius:10px; transform:translate(14px,-3px); box-shadow:0 12px 24px rgba(12,27,49,.1); }.process-row:hover .process-number{ color:var(--olive); }.process-row:hover .process-node{ background:var(--paper-2); color:var(--navy); transform:scale(1.06); } }
-@media (max-width:760px){ .expansion-process{ padding:76px 0; }.process-header{ margin-bottom:38px; }.process-list{ border-top-color:var(--navy); }.process-row{ grid-template-columns:62px 1fr; gap:6px 12px; min-height:0; padding:21px 16px; }.process-node{ display:none; }.process-number{ grid-column:1; grid-row:1; font-size:1.35rem; }.process-card h3{ grid-column:2; grid-row:1; font-size:1.15rem; }.process-card p{ grid-column:1 / -1; grid-row:2; max-width:520px; padding-left:74px; font-size:.96rem; } }
+
+.marketplace-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.marketplace-card {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), border-color 0.35s ease;
+  box-shadow: 0 4px 15px rgba(12, 27, 49, 0.02);
+}
+.marketplace-card-top {
+  padding: 24px 24px 16px;
+  border-bottom: 1px solid var(--line-soft);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.marketplace-card-bottom {
+  padding: 18px 24px 24px;
+  flex-grow: 1;
+  background: rgba(12, 27, 49, 0.012);
+}
+.marketplace-number {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink-faint);
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+}
+.marketplace-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(12, 27, 49, 0.05);
+  color: var(--navy);
+  transition: transform 0.4s var(--ease), background 0.35s ease;
+}
+.marketplace-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+.marketplace-card h3 {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.25;
+}
+.marketplace-card-bottom p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+/* --- Theme 1: Navy (Featured) --- */
+.marketplace-card--navy {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+  border-color: var(--navy);
+}
+.marketplace-card--navy .marketplace-card-top {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+.marketplace-card--navy .marketplace-card-bottom {
+  background: rgba(0, 0, 0, 0.12);
+}
+.marketplace-card--navy .marketplace-number {
+  color: var(--paper);
+  opacity: 0.35;
+}
+.marketplace-card--navy .marketplace-icon {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gold);
+}
+.marketplace-card--navy h3 {
+  color: var(--paper);
+}
+.marketplace-card--navy .marketplace-card-bottom p {
+  color: rgba(248, 248, 247, 0.85);
+}
+
+/* --- Theme 2: Olive Accent --- */
+.marketplace-card--olive {
+  background: linear-gradient(135deg, rgba(93, 103, 67, 0.035) 0%, var(--paper) 100%);
+}
+.marketplace-card--olive .marketplace-icon {
+  background: rgba(93, 103, 67, 0.08);
+  color: var(--olive);
+}
+
+/* --- Theme 3: Gold Accent --- */
+.marketplace-card--gold {
+  background: linear-gradient(135deg, rgba(199, 154, 61, 0.045) 0%, var(--paper) 100%);
+}
+.marketplace-card--gold .marketplace-icon {
+  background: rgba(199, 154, 61, 0.08);
+  color: var(--gold);
+}
+
+/* --- Hover Effects --- */
+.marketplace-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -18px rgba(12, 27, 49, 0.16);
+}
+.marketplace-card--navy:hover {
+  box-shadow: 0 20px 40px -18px rgba(12, 27, 49, 0.35);
+  border-color: var(--olive-light);
+}
+.marketplace-card--olive:hover {
+  border-color: rgba(93, 103, 67, 0.35);
+}
+.marketplace-card--gold:hover {
+  border-color: rgba(199, 154, 61, 0.35);
+}
+.marketplace-card:hover .marketplace-icon {
+  transform: scale(1.08);
+}
+.marketplace-card--navy:hover .marketplace-icon {
+  background: rgba(255, 255, 255, 0.14);
+}
 
 /* ===================================================================
    Investor Event
@@ -654,22 +786,27 @@ button{ font-family: inherit; cursor:pointer; }
 .pricing-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  gap: 20px;
   align-items: stretch;
 }
 .price-card{
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 38px 32px;
+  padding: 26px 28px;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
   transition: transform .4s var(--ease), box-shadow .4s var(--ease);
 }
+.price-card > *:not(.price-card-bg) {
+  position: relative;
+  z-index: 1;
+}
 .price-card:hover{
-  transform: translateY(-8px);
-  box-shadow: 0 30px 50px -28px rgba(12,27,49,0.28);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -20px rgba(12,27,49,0.2);
 }
 .price-card--featured{
   background: var(--navy);
@@ -683,7 +820,7 @@ button{ font-family: inherit; cursor:pointer; }
 .price-card--featured .price-list li::before{ color: var(--olive-light); }
 .price-badge{
   position: absolute;
-  top: -13px; left: 32px;
+  top: -13px; left: 28px;
   background: var(--gold);
   color: var(--navy);
   font-family: var(--font-mono);
@@ -692,96 +829,149 @@ button{ font-family: inherit; cursor:pointer; }
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 999px;
+  z-index: 2;
 }
-.price-card h3{ font-size: 1.2rem; margin-bottom: 6px; }
-.price-tagline{ color: var(--ink-faint); font-size: 0.85rem; margin-bottom: 20px; }
+.price-card h3{ font-size: 1.6rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
+.price-tagline{ color: var(--ink-faint); font-size: 0.85rem; margin-bottom: 12px; }
 .price-amount{
-  font-family: var(--font-display);
-  font-size: 2.1rem;
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 600;
-  color: var(--navy);
+  color: var(--ink-faint);
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+}
+.price-card--featured .price-amount {
+  opacity: 0.45;
 }
 .price-unit{ font-size: 1rem; font-family: var(--font-body); color: var(--ink-soft); font-weight: 500; }
-.price-alt{ font-size: 0.85rem; color: var(--ink-soft); margin-top: 4px; margin-bottom: 22px; }
-.price-list{ margin-bottom: 30px; flex-grow: 1; }
+.price-alt{ font-size: 0.85rem; color: var(--ink-soft); margin-top: 2px; margin-bottom: 12px; }
+.price-list{ margin-bottom: 18px; flex-grow: 1; }
 .price-list li{
   font-size: 0.92rem;
   color: var(--ink-soft);
   padding-left: 22px;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .price-list li::before{
   content: '\2192';
   position: absolute; left:0;
   color: var(--olive-dark);
 }
-.price-card:not(.price-card--featured) .price-amount{ margin-bottom: 4px; }
-.price-card--featured .price-amount{ margin-bottom: 2px; }
+.price-card-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.06;
+  filter: saturate(0.6) contrast(1.05);
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+  pointer-events: none;
+}
+.price-card:hover .price-card-bg {
+  opacity: 0.13;
+  transform: scale(1.06);
+}
+.price-card--featured .price-card-bg {
+  opacity: 0.08;
+}
+.price-card--featured:hover .price-card-bg {
+  opacity: 0.16;
+}
 
 /* ===================================================================
-   Industries — "Who We Work With"
+   Industries — "Who We Work With" (Business Expos)
 =================================================================== */
-.industries{ padding: 64px 0; }
-.industries .section-head{ margin-bottom: 32px; }
+.industries {
+  padding: 80px 0;
+  position: relative;
+  background-image: linear-gradient(rgba(12, 27, 49, 0.88), rgba(12, 27, 49, 0.88)), url('assets/expo_background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.industries .section-head h2 {
+  color: var(--paper);
+}
+.industries .eyebrow {
+  color: var(--gold);
+}
 .industry-grid{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 14px;
 }
-.industry-card{
+.industry-card {
   position: relative;
   overflow: hidden;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   gap: 14px;
-  background: var(--paper-2);
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 18px 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: rgba(248, 248, 247, 0.9);
   transition: transform .4s var(--ease), border-color .35s ease, background .35s ease, box-shadow .4s var(--ease);
 }
-.industry-card::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background: linear-gradient(135deg, var(--olive) 0%, var(--navy) 100%);
-  opacity:0;
+.industry-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(93, 103, 67, 0.4) 0%, rgba(12, 27, 49, 0.4) 100%);
+  opacity: 0;
   transition: opacity .4s ease;
-  z-index:0;
+  z-index: 0;
 }
-.industry-icon{
+.industry-icon {
   position: relative;
-  z-index:1;
+  z-index: 1;
   flex: none;
-  width: 38px; height: 38px;
-  display:flex; align-items:center; justify-content:center;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
-  background: var(--paper);
-  color: var(--olive-dark);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--gold);
   transition: background .35s ease, color .35s ease, transform .4s var(--ease);
 }
-.industry-icon svg{ width: 20px; height: 20px; }
-.industry-name{
+.industry-icon svg { width: 20px; height: 20px; }
+.industry-name {
   position: relative;
-  z-index:1;
+  z-index: 1;
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--navy);
+  color: var(--paper);
   transition: color .35s ease;
 }
-.industry-card:hover{
+.industry-card:hover {
   transform: translateY(-4px);
-  border-color: transparent;
-  box-shadow: 0 20px 34px -18px rgba(12,27,49,0.35);
+  border-color: var(--gold);
+  box-shadow: 0 15px 30px -15px rgba(12, 27, 49, 0.5);
+  background: rgba(255, 255, 255, 0.1);
 }
-.industry-card:hover::before{ opacity: 1; }
-.industry-card:hover .industry-icon{
-  background: rgba(248,248,247,0.15);
-  color: var(--paper);
+.industry-card:hover::before {
+  opacity: 1;
+}
+.industry-card:hover .industry-icon {
+  background: var(--gold);
+  color: var(--navy);
   transform: scale(1.08) rotate(-4deg);
 }
-.industry-card:hover .industry-name{ color: var(--paper); }
+.industry-card:hover .industry-name {
+  color: var(--paper);
+}
 
 /* ===================================================================
    Clients & Partners
@@ -931,9 +1121,9 @@ button{ font-family: inherit; cursor:pointer; }
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(1) opacity(0.8);
+  filter: none;
+  opacity: 1;
   transition: 
-    filter 0.35s ease, 
     opacity 0.35s ease, 
     transform 0.35s var(--ease);
 }
@@ -948,7 +1138,6 @@ button{ font-family: inherit; cursor:pointer; }
 }
 
 .canvas-logo-node:hover img.relationship-logo {
-  filter: grayscale(0) opacity(1);
   transform: scale(1.03);
 }
 
@@ -1429,13 +1618,14 @@ h1,h2,h3,h4,h5,
 .investor-desc{ margin-bottom: 18px; }
 .chip-row{ margin-bottom: 22px; }
 .chip{ padding: 6px 13px; }
-.pricing-grid{ gap: 18px; }
-.price-card{ padding: 30px 26px; }
-.price-tagline{ margin-bottom: 12px; }
-.price-alt{ margin-bottom: 16px; }
-.price-list{ margin-bottom: 22px; }
-.price-list li{ margin-bottom: 8px; }
-.industries{ padding: 52px 0; }
+.pricing-grid{ gap: 16px; }
+.price-card{ padding: 22px 20px; }
+.price-tagline{ margin-bottom: 8px; }
+.price-alt{ margin-bottom: 10px; }
+.price-list{ margin-bottom: 14px; }
+.price-list li{ margin-bottom: 6px; }
+.marketplace-grid{ grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.industries{ padding: 64px 0; background-attachment: scroll; }
 .industry-card{ padding: 14px 16px; }
 .why-card{ padding: 28px 26px; }
 .why-card h4{ margin-top: 10px; }
@@ -1469,7 +1659,11 @@ h1,h2,h3,h4,h5,
   .section-head h2{ font-size: clamp(2.1rem, 11vw, 2.8rem); }
   .ascent-card{ padding: 18px; }
   .investor-panel{ padding: 30px 22px; }
-  .price-card,.why-card{ padding: 24px 20px; }
+  .price-card{ padding: 22px 18px; }
+  .why-card{ padding: 24px 20px; }
+  .marketplace-grid{ grid-template-columns: 1fr; gap: 16px; }
+  .marketplace-card-top{ padding: 20px 20px 14px; }
+  .marketplace-card-bottom{ padding: 16px 20px 20px; }
   .cta-band{ padding: 58px 0; }
   .site-footer{ padding-top: 46px; }
   .strategic-call-form{ grid-template-columns:1fr 1fr; gap:12px; }
@@ -1568,10 +1762,10 @@ h1,h2,h3,h4,h5,
   .section-sub{ font-size:1rem; }
   .lead-statement{ font-size:1.48rem; }
   .process-header h2{ font-size:clamp(2.25rem, 12vw, 3rem); }
-  .process-card p{ padding-left:0; }
+  .marketplace-card h3{ font-size: 1.15rem; }
   .investor-panel{ padding:28px 20px; border-radius:16px; }
   .chip{ padding:6px 11px; font-size:.75rem; }
-  .price-card{ padding:26px 20px; }
+  .price-card{ padding:22px 16px; }
   .industry-card{ min-height:64px; padding:12px; gap:9px; }
   .industry-icon{ width:34px; height:34px; }
   .industry-name{ font-size:.84rem; }
